@@ -1,12 +1,12 @@
 name: run main.py
 
-on:
-  push:
-      branches:
-        - main
 # on:
-#   schedule:
-#     - cron: '*/5 * * * 1-5' # At 00:00 on Monday
+#   push:
+#       branches:
+#         - main
+on:
+  schedule:
+    - cron: '*/5 * * * *' # At 00:00 on Monday
 
 jobs:
   build:
